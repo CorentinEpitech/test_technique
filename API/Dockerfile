@@ -1,10 +1,8 @@
 FROM node:16-alpine3.13
 
-WORKDIR /app
-COPY package*.json ./
-RUN npm i
+RUN mkdir -p /urs/src/app
+WORKDIR /usr/src/app
 COPY . .
-
+RUN npm install
 EXPOSE 8080
-
-CMD [ "node", "index.js" ]
+CMD ["npm", "run", "start"]
