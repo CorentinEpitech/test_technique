@@ -1,4 +1,9 @@
 .table {
-    width: 80%;
+    width: 85%;
     margin: auto;
+}
+
+.scrollableTable {
+    max-height: 70vh;
+    overflow: scroll;
 }

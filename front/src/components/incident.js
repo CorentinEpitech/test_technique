@@ -1,19 +1,30 @@
 import '../style/component/incident.css'
+import { ReactComponent as EditIcon } from '../assets/icons/edit_icon.svg'
+import { ReactComponent as DeleteIcon } from '../assets/icons/delete_icon.svg'
+import { ReactComponent as MoreIcon } from '../assets/icons/chevron_droite_icon.svg'
 
-const IncidentElement = function() {
+const IncidentElement = function(props) {
     return(
-        <div className='tableHeader'>
-            <div id='title'>
-                <p>Title</p>
+        <div className='incidentContainer'>
+            <div id='incidentTitle'>
+                <p>{props.incident.title}</p>
             </div>
-            <div id='createdDate'>
-                <p>Date de création</p>
+            <div id='incidentCreatedDate'>
+                <p>{props.incident.created}</p>
             </div>
-            <div id='editDate'>
-                <p>Date de modifiction</p>
+            <div id='incidentEditDate'>
+                <p>{props.incident.modified}</p>
             </div>
-            <div id='newIncidentButton'>
-                <button>Nouvel Incident</button>
+            <div className='buttonContainer'>
+                    <button id='editIcon'>
+                        <EditIcon/>
+                    </button>
+                    <button id='deleteIcon'>
+                        <DeleteIcon />
+                    </button>
+                    <button id='moreIcon'>
+                        <MoreIcon />
+                    </button>
             </div>
         </div>
     )

@@ -1,38 +1,64 @@
-.tableHeader {
+.incidentContainer {
     display: flex;
+    background-color: #FFFFFF;
+    padding: 0px 20px;
+    border-radius: 20px;
+    margin: 15px 0px;
 }
-#title {
+#incidentTitle {
     width: 40%;;
     font-family: 'Poppins';
     color: #464646;
 }
-#createdDate {
+#incidentCreatedDate {
     width: 20%;
     font-family: 'Poppins';
     color: #464646;
 }
-#editDate {
+#incidentEditDate {
     width: 20%;
     font-family: 'Poppins';
     color: #464646;
 }
-#newIncidentButton {
+.buttonContainer {
     width: 20%;
     display: flex;
     justify-content: flex-end;
+    margin: auto;
 }
-#newIncidentButton>button {
-    max-height: 70%;
-    margin: auto 0;
-    background-color: #FFFFFF;
+#editIcon {
+    background-color: #FFA15E;
     border: none;
-    font-family: 'Poppins';
-    color: #2F44FF;
-    border-radius: 20px;
-    padding: 6px 30px 20px 30px;
-    font-size: 17px;
+    border-radius: 70px;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    margin: 0px 5px;
 }
-#newIncidentButton>button:active {
-    background-color: #2F44FF;
-    color: #FFFFFF;
+#deleteIcon {
+    background-color: #FF4848;
+    border: none;
+    border-radius: 70px;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    margin: 0px 5px;
+}
+#moreIcon {
+    background-color: #87FF5E;
+    border: none;
+    border-radius: 70px;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    margin: 0px 5px;
+}
+#editIcon>svg:active {
+    filter: invert(100%);
+}
+#deleteIcon>svg:active {
+    filter: invert(100%);
+}
+#moreIcon>svg:active {
+    filter: invert(100%);
 }
