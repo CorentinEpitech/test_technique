@@ -1,0 +1,9 @@
+{
+    "App": {
+        "AppPort": "8080"
+    },
+    "MongoDB": {
+        "MongoDB_url": "mongodb+srv://admin:szajuPtm7DK93iMS@cluster0.hyac6.mongodb.net/incident_db?retryWrites=true&w=majority"
+
+    }
+}
