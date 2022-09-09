@@ -1,4 +1,8 @@
-import '../style/component/tableHeader.css'
+import '../../style/component/tableHeader.css'
+import useModal from '../modal/useModal';
+import Modal from '../modal/modal';
+import React from 'react';
+import NewIncident from '../request/newIncident';
 
 const TableHeader = function() {
     return(
@@ -13,9 +17,9 @@ const TableHeader = function() {
                 <p>Date de modifiction</p>
             </div>
             <div id='newIncidentButton'>
-                <button>Nouvel Incident</button>
+                <NewIncident />
             </div>
-        </div>
+        </div>  
     )
 }
 

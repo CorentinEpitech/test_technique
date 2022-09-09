@@ -1,0 +1,47 @@
+.modalTitle {
+    font-family: 'Poppins';
+    font-size: 25px;
+}
+
+.modalTitleContainer {
+    max-width: 320px;
+}
+
+.modalContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+.modalButtonDelete {
+    margin: auto 0;
+    background-color: #FFFFFF;
+    border: none;
+    font-family: 'Poppins';
+    color: #FF0000;
+    border-radius: 50px;
+    padding: 15px 35px 15px 35px;
+    font-size: 22px;
+    width: 200px;
+}
+
+.modalButtonCancel {
+    margin: auto 0;
+    background-color: #FFFFFF;
+    border: none;
+    font-family: 'Poppins';
+    color: #000000;
+    border-radius: 50px;
+    padding: 15px 35px 15px 35px;
+    font-size: 22px;
+    width: 200px;
+}
+
+.modalButtonContainer {
+    width: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

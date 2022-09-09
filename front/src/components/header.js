@@ -5,8 +5,6 @@ import '../style/global.css'
 
 
 const Header = function() {
-    console.log(logo);
-
     return (
         <div className='headerContainer'>
             <h1 className='title'>Liste des incidents</h1>

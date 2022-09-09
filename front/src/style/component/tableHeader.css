@@ -17,23 +17,3 @@
     font-family: 'Poppins';
     color: #464646;
 }
-#newIncidentButton {
-    width: 20%;
-    display: flex;
-    justify-content: flex-end;
-}
-#newIncidentButton>button {
-    max-height: 70%;
-    margin: auto 0;
-    background-color: #FFFFFF;
-    border: none;
-    font-family: 'Poppins';
-    color: #2F44FF;
-    border-radius: 20px;
-    padding: 6px 30px 20px 30px;
-    font-size: 17px;
-}
-#newIncidentButton>button:active {
-    background-color: #2F44FF;
-    color: #FFFFFF;
-}

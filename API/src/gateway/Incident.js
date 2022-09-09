@@ -24,14 +24,20 @@ async function Create_Incident(req) {
     if (req.title == "" || req.description == "") {
         return -1;
     }
-    
-    let date_ob = new Date();
+
+    const today = new Date();
+    const yyyy = today.getFullYear();
+    let mm = today.getMonth() + 1; // Months start at 0!
+    let dd = today.getDate();
+    if (dd < 10) dd = '0' + dd;
+    if (mm < 10) mm = '0' + mm;
+    const formattedToday = dd + '/' + mm + '/' + yyyy;
 
     await requestdb.create({
         title: req.title,
         description: req.description,
-        created: date_ob,
-        modified: date_ob,
+        created: formattedToday,
+        modified: formattedToday,
     })
     return result;
 }
@@ -40,6 +46,14 @@ async function Update_Incident(req) {
     var requestdb = IncidentSchema.IncidentSchema;
     var result = 0;
 
+    const today = new Date();
+    const yyyy = today.getFullYear();
+    let mm = today.getMonth() + 1; // Months start at 0!
+    let dd = today.getDate();
+    if (dd < 10) dd = '0' + dd;
+    if (mm < 10) mm = '0' + mm;
+    const formattedToday = dd + '/' + mm + '/' + yyyy;
+
     if (req.title == null || req.description == null) {
         return -1;
     }
@@ -47,9 +61,7 @@ async function Update_Incident(req) {
         return -1;
     }
 
-    let date_ob = new Date();
-
-    await requestdb.updateOne({ _id: req.id }, { $set: { "title": req.title, "description": req.description, "modified": date_ob } });
+    await requestdb.updateOne({ _id: req.id }, { $set: { "title": req.title, "description": req.description, "modified": formattedToday } });
     return result;
 }
 

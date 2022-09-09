@@ -1,0 +1,91 @@
+#newIncidentButton {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+}
+#newIncidentAddButton {
+    max-height: 70%;
+    margin: auto 0;
+    background-color: #FFFFFF;
+    border: none;
+    font-family: 'Poppins';
+    color: #2F44FF;
+    border-radius: 20px;
+    padding: 6px 30px 20px 30px;
+    font-size: 17px;
+}
+#newIncidentAddButton:active {
+    background-color: #2F44FF;
+    color: #FFFFFF;
+}
+#formDescription {
+    width: 100%;
+    height: 200px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    resize: none;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Poppins';
+    font-size: 17px;
+}
+
+#formDescription::placeholder {
+    font-family: 'Poppins';
+}
+
+#formTitle {
+    width: 60%;
+    border: none;
+    border-radius: 10px;
+    height: 10%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    resize: none;
+    font-family: 'Poppins';
+    font-size: 17px;
+
+}
+#formTitle::placeholder {
+    font-family: 'Poppins';
+}
+
+.formContainer {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px 20px 0px;
+}
+
+.form-group>label {
+    font-family: 'Poppins';
+    /* margin: 20px 0px 20px 0px; */
+    color: #2F44FF;
+    font-size: 21px;
+    margin-left: 20px;
+}
+
+#formButton {
+    max-height: 70%;
+    margin: auto 0;
+    background-color: #FFFFFF;
+    border: none;
+    font-family: 'Poppins';
+    color: #2F44FF;
+    border-radius: 20px;
+    padding: 6px 30px 20px 30px;
+    font-size: 17px;
+    max-width: 200px;
+}
+.form-group-btn {
+    display: flex;
+    justify-content: center;
+}

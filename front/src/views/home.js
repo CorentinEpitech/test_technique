@@ -1,5 +1,5 @@
 import Header from "../components/header";
-import IncidentList from "../components/incidentList";
+import IncidentList from "../components/incident/incidentList";
 const HomeView = function() {
     return (
         <div>

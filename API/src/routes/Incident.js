@@ -8,7 +8,7 @@ module.exports = function (app) {
     app.use(bp.json());
     app.use(bp.urlencoded({ extended: true }));
 
-    app.get('/oneincident', cors(), asyncMiddleware(async (req, res) => { 
+    app.post('/oneincident', cors(), asyncMiddleware(async (req, res) => { 
         var result = await Incident.GetOne_Incident(req.body);
 
         res.status(200).json({ status: "OK", incident: result });

@@ -1,4 +1,4 @@
-import '../style/component/incidentList.css'
+import '../../style/component/incidentList.css'
 
 import React, { useState, useEffect } from "react";
 import axios from "axios";
